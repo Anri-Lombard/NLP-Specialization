@@ -1,6 +1,6 @@
 # Natural Language Processing with Classification and Vector Spaces
 
-## Week 1: Sentiment Analysis with Logistic Regression
+## Week 1: Sentiment Analysis with Logistic Regression (Normal)
 
 - __Logistic regression is a statistical method for modeling a binary outcome__ (i.e. a outcome with two possible values, such as success or failure) as a function of one or more predictor variables. It is a type of generalized linear model (GLM) that uses a logistic function to model the probability of the outcome being a certain value (usually "success") given the values of the predictor variables.
 
@@ -93,5 +93,48 @@
 
 [Logistic Regression](../Quizes/C1W1.md)
 
-## Week 2: Sentiment Analysis with Naive Bayes
+## Week 2: Sentiment Analysis with Naive Bayes (Viking)
 
+- __Bayes rule be a way of figuring out the chance of something happening, given that something else has already happened.__ It be like trying to figure out the chances of a good raid, given that the weather be favorable. Ye see, if ye know the chances of a good raid when the weather be favorable, and ye know the chances of the weather bein' favorable, ye can use Bayes rule to figure out the chances of a good raid overall. Ye just take the chance of a good raid when the weather be good, multiply it by the chance of the weather being good, and then divide it by the chance of a good raid overall. And that be Bayes rule, me hearties!
+
+- __Laplacian Smoothing be a technique used to smooth out the probabilities of events occurring.__ Ye see, when ye have a large amount of data, ye can calculate the probability of an event happening quite accurately, but when ye have a small amount of data, the probabilities may be quite uncertain.
+
+    Laplacian Smoothing be like adding a bit of extra "treasure" to a chest that ye know has some, but ye aren't sure how much exactly. It be a way to make sure that ye don't end up with a probability of zero for an event that may happen, even if ye haven't seen it happen yet.
+
+    The idea behind it is that ye add a small constant k to the numerator and denominator of the probability formula, when calculating the probability of an event happening. This way, even if ye haven't seen an event happen yet, ye can still estimate the probability of it happening, based on the events ye have seen.
+
+    So ye see, Laplacian Smoothing be like a little extra insurance on a raid, to make sure that ye don't leave empty handed due to lack of information.
+
+- __Training a Bayes classifier can be done with the following 6 step plan:__
+
+    1. Collect and prepare your data: Gather the data ye will be using to train the classifier. Make sure to split it into different categories, or classes, depending on what ye are trying to classify. This be like preparing yer ship and crew for a raid, making sure ye have everything ye need.
+    2. Calculate the prior probabilities: Determine the probability of each class, or P(A), using the data ye have collected. This be like figuring out the chances of finding treasure on a specific island based on previous raids.
+    3. Determine the likelihood: Determine the probability of each feature, or P(B|A), given each class, using the data ye have collected. This be like figuring out the chances of finding a specific type of treasure based on the island ye are raiding.
+    4. Use Bayes' theorem to classify new data: Once ye have calculated the prior probabilities and likelihood, ye can use Bayes' theorem to classify new data. This be like using the information gathered before the raid, to decide where to search for treasure during the raid.
+    5. Evaluate the classifier: Once ye have classified new data, evaluate the performance of the classifier. This be like counting the treasure and evaluating the success of the raid.
+    6. Repeat the process: Keep collecting and preparing data, updating the prior probabilities and likelihood, classifying new data, and evaluating the classifier.
+
+    This be like going on more raids, and improving yer strategy with each successful one.
+    By following these 6 steps, ye can train a Bayes classifier to classify new data with high accuracy, just like a successful viking raid.
+
+- __Bayes' theorem be used in many different applications__, as it is a powerful tool for making decisions based on uncertain information. Some of the most common applications of Bayes' theorem include:
+
+    1. Email spam filters: Bayes' theorem can be used to classify emails as spam or not spam, based on the presence of certain keywords and phrases.
+    2. Natural Language Processing: Bayes' theorem can be used to classify text documents, such as news articles or social media posts, into different categories such as positive, negative, or neutral sentiments.
+    3. Medical diagnosis: Bayes' theorem can be used to make a diagnosis based on symptoms and patient history.
+    4. Computer Vision: Bayes' theorem can be used in object recognition and image classification, such as identifying a specific object in an image.
+    5. Robotics: Bayes' theorem can be used in robot localization, which is the process of determining the position of a robot in an environment.
+    6. Recommender systems: Bayes' theorem can be used to recommend products or services to customers based on their past behavior and preferences.
+    7. Speech recognition: Bayes' theorem can be used to recognize spoken words by analyzing the patterns of sound and comparing them to known patterns.
+    8. Fraud detection: Bayes' theorem can be used to identify fraudulent transactions by analyzing patterns of behavior and comparing them to known patterns of fraudulent activity.
+
+    So ye see, Bayes' theorem be a versatile tool, that can be applied in many different fields and domains, just like a skilled viking, who can adapt and excel in different environments and situations.
+
+- Bayes' theorem makes a few __key assumptions__ when making predictions or classifications. Two of the most important assumptions are:
+
+    1. Independence: Bayes' theorem assumes that the features or variables used for classification are independent of each other. This means that the presence or absence of one feature does not affect the presence or absence of another feature. For example, if using the words "happy" and "NLP" to classify a tweet as positive or negative, Bayes' theorem assumes that the presence of the word "happy" is independent of the presence of the word "NLP".
+    2. Relative frequencies in the corpus: Bayes' theorem relies on the relative frequency of words and phrases in the corpus (collection of text) to calculate the probabilities. This means that the algorithm needs a large enough corpus of text to estimate the probabilities of words and phrases, so it can make accurate predictions.
+
+    Assuming independence and relative frequencies allows Bayes' theorem to estimate the probabilities and make predictions, but it is important to keep in mind that these assumptions may not always hold true in real-world situations. For example, the presence of the word "happy" might be dependent on the presence of the word "NLP" in certain tweets, and the corpus might not be representative of the population of tweets that the algorithm will be used on.
+
+    In that case, smoothing techniques such as Laplace smoothing can be applied to correct for the probability estimates and make the algorithm more robust.

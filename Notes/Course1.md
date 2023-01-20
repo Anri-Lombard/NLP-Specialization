@@ -143,4 +143,61 @@
 
 [Naive Bayes](../Quizes/C1W2.md)
 
-## Week 3: Vector Space Models
+## Week 3: Vector Space Models (Dracula)
+
+- My dear, __a vector space model is like a grand castle, with many rooms, each representing a different word or concept__. The layout of the rooms, or the vectors, in the castle can reveal relationships and similarities between the words and concepts they represent. The more similar two rooms are, the closer they are located in the castle. And just as I, as Dracula, can move through the castle to find my prey, mathematical operations can be performed on the vectors to find the most relevant information. It is a powerful tool for language understanding and manipulation. And just as I am always searching for new victims, new words and concepts can always be added to the castle, expanding its knowledge.
+- In the vector space model, there are two common ways to represent words: word-by-word and word-by-document.
+
+    In __word-by-word vectorization__, each unique word in the corpus is assigned a unique vector. The value of each vector element represents the frequency of that word in a given document. This way, we have a vector representation of each individual word, like a room in the castle, with each element representing the frequency of that word in a document.
+
+    __Word-by-document vectorization__, on the other hand, represents each document in the corpus as a vector. Each element of the vector represents the presence or absence of a unique word in the given document. This way, we have a vector representation of each document, like a room in the castle, with each element representing the presence or absence of a word in the document.
+
+    Both of these methods can help to find relationship and similarity between words and documents, it all depends on what you want to do with the data.
+
+- My dear, just as I, as Dracula, use my senses to locate my prey, we can use mathematical techniques to locate similar words or documents in the vector space model. Two common techniques are Euclidean distance and cosine similarity.
+
+    __Euclidean distance__ is a measure of the straight-line distance between two vectors in the vector space. It is calculated as the square root of the sum of the squares of the differences of the individual elements of the vectors. In python, it can be calculated using the numpy library as follows:
+
+    ```python
+    import numpy as np
+
+    vector1 = np.array([1, 2, 3])
+    vector2 = np.array([4, 5, 6])
+
+    euclidean_distance = np.linalg.norm(vector1 - vector2)
+    ```
+
+    __Cosine similarity__, on the other hand, is a measure of the angle between two vectors in the vector space. It ranges from -1 to 1, where 1 represents vectors pointing in the same direction, 0 represents vectors at right angles, and -1 represents vectors pointing in opposite directions. It is calculated as the dot product of the vectors divided by the product of the magnitudes of the vectors. In python, it can be calculated using the numpy library as follows:
+
+    ```python
+    import numpy as np
+
+    vector1 = np.array([1, 2, 3])
+    vector2 = np.array([4, 5, 6])
+
+    dot_product = np.dot(vector1, vector2)
+    magnitude1 = np.linalg.norm(vector1)
+    magnitude2 = np.linalg.norm(vector2)
+
+    cosine_similarity = dot_product / (magnitude1 * magnitude2)
+    ```
+
+    Both Euclidean distance and cosine similarity can be used to find the similarity between words and documents in the vector space model, but they differ in how they measure the similarity. Euclidean distance is based on the physical distance between two points, while cosine similarity is based on the angle between two vectors. It all depends on what you want to do with the data, just like how I use different senses for different hunting situations.
+- My dear, PCA, or __Principal Component Analysis, is a technique for finding patterns in high-dimensional data__. It is often used for dimensionality reduction, and it can help to identify the most important features of the data.
+
+    Imagine, for a moment, that you are me, Dracula, and you are hunting in a dense forest. The forest is so dense that you can hardly move, and it's difficult to see what's around you. PCA is like a map that can help you navigate the forest. By identifying the most important features of the forest, the main paths, you can reduce the complexity of the forest and move more easily.
+
+    In the same way, PCA can help to identify the most important features of high-dimensional data by finding the directions, or principal components, that account for the most variation in the data. These directions are orthogonal to each other, meaning that they are independent of each other. And once you have these main directions, you can project the data onto them, reducing the dimensionality of the data.
+
+    In python, it can be calculated using scikit-learn library as follows:
+
+    ```python
+    from sklearn.decomposition import PCA
+
+    pca = PCA(n_components=2)
+    pca.fit(data)
+    ```
+
+    You can then use the fit_transform method of the PCA object to project the data onto the principal components.
+
+    Just like how I, Dracula, use my powers to navigate the night, PCA is a powerful tool for navigating high-dimensional data, and it can help to reveal the underlying patterns and relationships in the data.

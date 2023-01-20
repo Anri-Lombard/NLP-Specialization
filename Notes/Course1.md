@@ -89,7 +89,7 @@
 
     Supervised learning is widely used in various fields such as natural language processing, computer vision, speech recognition, and many more. It can be used for a variety of tasks such as classification, regression, and prediction.
 
-### __Quiz__
+### __Quiz 1__
 
 [Logistic Regression](../Quizes/C1W1.md)
 
@@ -138,3 +138,9 @@
     Assuming independence and relative frequencies allows Bayes' theorem to estimate the probabilities and make predictions, but it is important to keep in mind that these assumptions may not always hold true in real-world situations. For example, the presence of the word "happy" might be dependent on the presence of the word "NLP" in certain tweets, and the corpus might not be representative of the population of tweets that the algorithm will be used on.
 
     In that case, smoothing techniques such as Laplace smoothing can be applied to correct for the probability estimates and make the algorithm more robust.
+
+### __Quiz 2__
+
+[Naive Bayes](../Quizes/C1W2.md)
+
+## Week 3: Vector Space Models

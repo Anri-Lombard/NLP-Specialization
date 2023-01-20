@@ -2,8 +2,6 @@
 
 ## Week 1: Sentiment Analysis with Logistic Regression
 
-### __Logistic Regression__
-
 - __Logistic regression is a statistical method for modeling a binary outcome__ (i.e. a outcome with two possible values, such as success or failure) as a function of one or more predictor variables. It is a type of generalized linear model (GLM) that uses a logistic function to model the probability of the outcome being a certain value (usually "success") given the values of the predictor variables.
 
     The logistic function, also known as the sigmoid function, is an S-shaped curve that maps any real-valued number to a value between 0 and 1. In logistic regression, this function is used to model the probability of the outcome being a "success" (usually represented by the value 1) given the values of the predictor variables.
@@ -90,3 +88,10 @@
     There are different types of supervised learning algorithms, such as linear regression, logistic regression, support vector machines, decision trees, and neural networks. Each algorithm is suited to different types of problems and datasets.
 
     Supervised learning is widely used in various fields such as natural language processing, computer vision, speech recognition, and many more. It can be used for a variety of tasks such as classification, regression, and prediction.
+
+### __Quiz__
+
+[Logistic Regression](../Quizes/C1W1.md)
+
+## Week 2: Sentiment Analysis with Naive Bayes
+

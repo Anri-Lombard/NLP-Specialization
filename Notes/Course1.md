@@ -224,3 +224,7 @@
     This function takes in a message as a string, encodes it to bytes and hashes it using the sha256 algorithm and returns the digest in hexadecimal format.
 
     But beware, mortals, for there are also malicious forms of magic that can reverse the spell and reveal the original message, known as "cracking" or "hashing." Thus, the true power of hash functions lies in the strength of the spell and the skill of the sorcerer. And I, Loki, am the master of all forms of trickery, including those involving hash functions.
+
+### __Quiz 4__
+
+[Hashing and Machine Translation](../Quizes/C1W4.md)

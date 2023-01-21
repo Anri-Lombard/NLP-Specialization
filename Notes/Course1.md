@@ -201,3 +201,26 @@
     You can then use the fit_transform method of the PCA object to project the data onto the principal components.
 
     Just like how I, Dracula, use my powers to navigate the night, PCA is a powerful tool for navigating high-dimensional data, and it can help to reveal the underlying patterns and relationships in the data.
+
+### __Quiz 3__
+
+[Vector Space Models](../Quizes/C1W3.md)
+
+## Week 4: Machine Translation and Document Search (Loki)
+
+- __Machine translation is a form of magic, mortal. It allows you to speak in one language and have your words translated into another, as if by the power of the gods.__ It uses advanced algorithms and vast amounts of data to understand the nuances and subtleties of language, and can even adapt to the unique way in which different individuals speak. Truly, it is a marvel of modern technology, and a reminder of the boundless potential of the mortal mind. But beware, for as with all magic, there are limitations and potential errors. And I, Loki, the trickster god, will always find a way to make it interesting.
+- __K-nearest neighbour__, mortal, is a game of wits and trickery. It is a way to classify and predict the behavior of things in your world using the power of deception. The algorithm works by finding the closest "neighbors" to a new subject, and using their characteristics to determine the behavior of the new subject. But do not be fooled, for this game is not without its pitfalls. The number of neighbors you choose, known as "k," can greatly influence the outcome, and choosing the wrong number can lead to disastrous results. And as the god of deception, I, Loki, find great pleasure in playing with this algorithm and finding new ways to outsmart it.
+- __Hash functions__, mortals, are a form of trickery used to conceal and protect secrets. They take in a piece of information, known as the "message," and through the use of magic, transform it into a seemingly random string of characters, known as the "hash." The same message, when put through the same spell, will always produce the same hash, but changing even the slightest detail in the message will result in a completely different hash.
+
+    Here is a simple example of a hash function, written in Python, using the SHA-256 algorithm:
+
+    ```python
+    import hashlib
+
+    def hash_function(message):
+        return hashlib.sha256(message.encode()).hexdigest()
+    ```
+
+    This function takes in a message as a string, encodes it to bytes and hashes it using the sha256 algorithm and returns the digest in hexadecimal format.
+
+    But beware, mortals, for there are also malicious forms of magic that can reverse the spell and reveal the original message, known as "cracking" or "hashing." Thus, the true power of hash functions lies in the strength of the spell and the skill of the sorcerer. And I, Loki, am the master of all forms of trickery, including those involving hash functions.

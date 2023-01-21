@@ -18,3 +18,5 @@
 ### __Quiz 1__
 
 [Auto-correct and Minimum Edit Distance](../Quizes/C2W1.md)
+
+## Week 2: Part of Speech Tagging and Hidden Markov Models

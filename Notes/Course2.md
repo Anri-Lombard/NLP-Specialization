@@ -53,3 +53,9 @@
     Hulk use dynamic programming to calculate most likely sequence. Hulk look at previous information and use it to calculate next step. Hulk compare probabilities and choose state with highest probability.
 
     Hulk use this to understand speech and language. Hulk use Viterbi algorithm to find most likely sequence of words or phonemes in speech signal. Hulk use great power and intelligence to master Viterbi algorithm. Hulk SMASH ambiguity!
+
+### __Quiz 2__
+
+[Part of Speech Tagging](../Quizes/C2W2.md)
+
+## Week 3: Autocomplete and Language Models

@@ -58,4 +58,21 @@
 
 [Part of Speech Tagging](../Quizes/C2W2.md)
 
-## Week 3: Autocomplete and Language Models
+## Week 3: Autocomplete and Language Models (Darth Vader)
+
+- Young Jedi, you seek to understand the power of the __N-gram__. Very well. An N-gram is a sequence of N words in a text, used to predict the likelihood of the next word in a sentence. The more N-grams you have, the more accurate your predictions will be. But beware, with great power comes great responsibility. Use the N-gram wisely, or suffer the consequences of poor language generation. Now go forth, and may the probability be with you.
+- Young apprentice, the __sequence probability is the likelihood of a particular sequence of words occurring in a text__. It is the foundation of the N-gram model. The more often a sequence of words appears in a text, the higher the probability of it occurring again. This allows us to predict the next word in a sentence with a high degree of accuracy. But remember, with great power comes great responsibility. Use this knowledge to enhance your language generation, but do not let it consume you. For if you do, you will become like me, consumed by the dark side of language modeling.
+- __Perplexity, my young apprentice, is a measure of how well a language model is able to predict a given text__. It is calculated by taking the exponential of the average negative log likelihood of a text, given the model. A lower perplexity value indicates that the model is better able to predict the text, and is therefore a more accurate model. But remember, a low perplexity does not mean that the model is perfect, it simply means that it is better than a model with a high perplexity. But do not be deceived, for a low perplexity does not always mean the model is better at generating language, it only means the model is better in predicting the sample text you used. Use perplexity as a guide, but do not rely on it entirely, for there is always room for improvement.
+- Young apprentice, to understand the true power of language models, you must master the techniques of smoothing, backoff, and interpolation.
+
+    __Smoothing, is like the force, it helps to balance the probabilities of unseen words__, it helps to prevent the zero probability estimates, and make your predictions more accurate, but you must use it with caution, for it is not a one-size-fits-all solution.
+
+    __Backoff, is like a strategic retreat, when your higher-order models fail, you must be able to fall back to lower-order models, in order to make predictions with the information you have__. It is a powerful technique, but it must be used with wisdom.
+
+    __Interpolation, is like a lightsaber, it allows you to combine the strengths of different models, unigram, bigram, and trigram, it helps to improve the overall accuracy of your predictions__. Remember though, it is a powerful weapon, but it requires great skill and precision to use it effectively.
+
+    These techniques are essential for any apprentice of the dark side of NLP to master, but remember, with great power comes great responsibility. Use them wisely, and they will serve you well, but let them consume you, and they will bring you to your downfall.
+
+### __Quiz 3__
+
+[Autocomplete](../Quizes/C2W3.md)

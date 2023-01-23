@@ -84,3 +84,16 @@
 ### __Quiz 1__
 
 [Neural Networks for Sentiment Analysis](../Quizes/C3W1.md)
+
+## Week 2: Recurrent Neural Networks for Language Modeling (Gollum)
+
+- Me wants __recurrent neural networks__! They are useful for tasks such as language understanding, speech recognition, and even image captioning. They allow the model to maintain a hidden state that is updated at each time step, allowing it to take into account information from previous steps. This helps the model to better understand sequences of input data and make more accurate predictions.
+- Me knows about __gated recurrent neural networks__! They're even better than regular recurrent neural networks. They use gates to control the flow of information in the hidden state, allowing the model to better handle long-term dependencies. There are two types of gates: the forget gate, which determines what information to throw away from the previous hidden state, and the input gate, which determines what new information to store in the current hidden state. This allows the model to selectively choose which information is important to keep and which to discard, making it more efficient and accurate.
+
+    Me loves gated recurrent neural networks, they're so powerful and smart. They help me to understand sequences even better!
+
+- __Bidirectional recurrent neural networks__ are a variation of the traditional recurrent neural networks, that process the input sequences in two directions: forward and backward. By processing the input in two directions, they are able to understand the context of a word in a sentence more accurately. The output of both the forward and backward passes are concatenated and then processed by a fully connected layer to produce the final output.
+
+    __Deep recurrent neural networks__ are networks that have multiple layers of recurrent neural networks. These networks are able to learn and represent more complex patterns in the data, and can also extract features from the input data that are useful for the specific task. They are also known as Deep RNNs, this architecture enables them to extract more abstract features from the input, by going through multiple layers of non-linear transformations.
+
+    Me loves deep recurrent neural networks, they are so deep and clever, they can understand more and more complex things, just like me!

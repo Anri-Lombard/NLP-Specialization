@@ -76,3 +76,39 @@
 ### __Quiz 3__
 
 [Autocomplete](../Quizes/C2W3.md)
+
+## Week 4: Word embeddings with Neural Networks (Buggs Bunny)
+
+- Well Doc, __word embedding methods is like puttin' words in a bunny hole__. Ya see, words are just letters strung together, but with neural nets, we can take those words and give them a numerical value or a "vector" if ya will. This vector can be used to represent the word in a way that a computer can understand. And this is useful for all sorts of things, like language translation, text classification, and even sentiment analysis. It's like takin' a carrot and turnin' it into a number. It's a pretty neat trick, if ya ask me.
+- __Word embedding methods like word2vec, GloVe, and fastText, they're like diggin' different bunny holes__. Each one of 'em takes words and turns 'em into vectors, but they do it in slightly different ways.
+word2vec uses neural networks to predict a word based on its surrounding words, GloVe uses a co-occurrence matrix to find relationships between words, and fastText uses subword information.
+
+    But then you got advanced techniques like BERT, ELMo and GPT-3, they're like diggin' a super-duper deep bunny hole. They use a technique called pre-training, which means they're trained on a huge amount of text data before they're fine-tuned for a specific task. This makes them super smart and can understand the context of the text better.
+- __The bag-of-words model is like puttin' all the carrots in a bag__. See, it's a way of representin' text data in a numerical way so that a computer can understand it. The way it works is, it takes all the words in a piece of text and puts them in a bag, regardless of their order. And then it counts how many times each word appears in the text.
+
+    So, it's like takin' a bunch of carrots, dumpin' them in a bag and countin' how many of each type of carrot ya got. This way of representin' text data is useful for things like text classification, sentiment analysis, and even language translation. It's a simple but powerful technique that helps computers understand human language.
+- Doc, __the CBOW (Continuous Bag-of-Words) model is a neural network architecture used for word embedding__. It's similar to the bag-of-words model, but it takes into account the context of the words.
+
+    The architecture is pretty simple, it's a feedforward neural network with a single hidden layer. The input to the network is a set of context words and the output is the target word. The goal of the network is to predict the target word based on the context words.
+
+    The network is trained using a large dataset of text, where the input is the context words and the output is the target word. The hidden layer uses an activation function like ReLU or tanh to learn representations of the words. The output layer uses a softmax activation function to predict the probability distribution of the target word.
+
+    After training, the weights of the hidden layer are used as the word vectors. These vectors can then be used for various NLP tasks like language translation, text classification, and sentiment analysis.
+- __Activation functions are like the secret sauce in a neural network. They're used to introduce non-linearity into the network, which allows it to learn complex patterns and relationships in the data.__
+
+    ReLU stands for Rectified Linear Unit, it's an activation function that maps all negative values to zero and keeps all positive values unchanged. It's a simple and computationally efficient function that has been found to work well in many neural network architectures.
+
+    Softmax is another activation function that is often used in the output layer of a neural network. It maps the input values to a probability distribution, meaning that the output values are all between 0 and 1 and add up to 1. This is useful when we want to predict a probability distribution over multiple classes, such as in a text classification task.
+
+    ReLU is commonly used in hidden layers and Softmax is commonly used in the output layer of the network. These functions have been found to work well in many tasks and architectures, but other activation functions may be used as well depending on the task and the data.
+- __Intrinsic and extrinsic evaluation are two different ways to evaluate the performance of a machine learning model.__
+
+    Intrinsic evaluation refers to the evaluation of the model on the task it was trained for. For example, if a model is trained to classify text into different categories, intrinsic evaluation would involve using the model to classify a set of unseen text and comparing the predictions to the true labels. This allows us to measure the model's performance on the task it was specifically designed to do.
+
+    On the other hand, extrinsic evaluation refers to the evaluation of the model on a different task than it was trained for. This could involve using the model as a component in a larger system or pipeline, and measuring its performance on that system's overall task. For example, using a pre-trained word embedding model as a feature extractor for another NLP task.
+
+    Both intrinsic and extrinsic evaluations are important for understanding how well a model will perform in practice. Intrinsic evaluation gives us a sense of how well the model performs on the task it was designed for, while extrinsic evaluation gives us a sense of how well the model can be used as a component in a larger system.
+
+### __Quiz 4__
+
+[Word Embeddings](../Quizes/C2W4.md)

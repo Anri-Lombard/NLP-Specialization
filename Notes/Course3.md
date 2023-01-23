@@ -1,3 +1,86 @@
 # Natural Language Processing with Sequence Models
 
-## Week 1: Neural Networks for Sentiment Analysis
+## Week 1: Neural Networks for Sentiment Analysis (Jack Sparrow)
+
+- Ahoy, mateys! __Trax be a powerful framework fer building and training neural networks__. Ye can use it to easily create and experiment with all sorts o' neural architectures, from simple feedforward networks to complex recurrent ones.
+
+    And the best part? Trax be written in Python, so 'tis easy fer any landlubber to understand and use. Just take a look at this bit o' code fer a simple feedforward network:
+
+    ```python
+    import trax
+    from trax import layers as tl
+
+    # Define the model
+    model = tl.Serial(
+        tl.Dense(512),
+        tl.Relu(),
+        tl.Dense(10),
+        tl.LogSoftmax()
+    )
+
+    # Train the model
+    trax.train(model, ...)
+    ```
+
+    Aye, 'tis as simple as that! Ye can also use Trax to easily save and load models, track progress durin' training, and more. So set sail and give Trax a try, me hearties!
+- A __dense layer be a simple type o' neural network layer that be used fer feedforward networks__. It multiplies the input data by a set o' weights and adds a bias term. Ye can think of it as a fancy way o' doing a matrix multiplication. In the example above, the first dense layer has 512 units, meaning it's going to multiply the input by a 512xX matrix (X being the number of features of the input data) and add a bias term of 512.
+
+    As fer __the ReLU layer, 'tis a type o' activation function__. __Activation functions be used to introduce non-linearity into the network__, and ReLU, or Rectified Linear Unit, be one o' the most commonly used ones. It takes the input and applies the function f(x) = max(0, x) which is equivalent to zeroing out all negative values and leaving positive values unchanged. This helps the network to learn more complex patterns in the data.
+
+    So in the example above, the model is using the Dense layer to perform matrix multiplication and adding bias term, then ReLU to introduce non-linearity in the model.
+- The __Serial layer be a type o' container layer that allows ye to group other layers together and treat them as a single layer__. In the example above, the Serial layer is used to group together the Dense layer, the ReLU layer, and the Dense layer with LogSoftmax. The output of one layer is passed as input to the next one, in the order they are defined.
+
+    As for __Embedding layer, it be a layer that be often used in natural language processing tasks such as text classification, language modeling, and machine translation. It allows ye to represent words, phrases, or other discrete symbols as dense vectors of real numbers, which can be more easily processed by neural networks__.
+
+    Here's an example of an Embedding layer in Python:
+
+    ```python
+    model = tl.Serial(
+        tl.Embedding(vocab_size=1000, d_feature=128),
+        tl.LSTM(n_units=64),
+        tl.Dense(10),
+        tl.LogSoftmax()
+    )
+    ```
+
+    In this example, the Embedding layer takes in a vocabulary size of 1000 and d_feature of 128, so it will create a matrix of 1000 x 128 that will be used to map the vocabulary index of each word to a dense vector. These dense vectors are then passed to the LSTM layer and further processed.
+
+    So, ye can use the Serial layer to group different layers together and the Embedding layer to represent discrete inputs such as text in a dense vector format for neural networks to process.
+- Ahoy, __the training process be the process of adjusting the weights and biases of a neural network model so that it can make accurate predictions on new data__. Trax provides a convenient function called train that ye can use to train a model. Here's an example of how ye can use it:
+
+    ```python
+    # Import the necessary libraries
+    import trax
+    from trax import layers as tl
+
+    # Define the model
+    model = tl.Serial(...)
+
+    # Define the training data
+    train_data = ...
+
+    # Define the loss function
+    loss_fn = ...
+
+    # Train the model
+    trax.train(
+        model=model,
+        inputs=train_data,
+        loss_fn=loss_fn,
+        optimizer=trax.optimizers.Adam(),
+        n_steps_per_checkpoint=10,
+        n_steps=1000
+    )
+    ```
+
+    In this example, we first define the model, the train_data and the loss function, then we use the train function to train the model. The inputs argument is used to specify the training data, the loss_fn argument is used to specify the loss function, and the optimizer argument is used to specify the optimization algorithm. We use Adam optimizer in this case.
+
+    The n_steps_per_checkpoint argument is used to specify how often the model's performance should be evaluated during training, and the n_steps argument is used to specify the total number of training steps.
+
+    During training, the model's weights and biases will be updated based on the gradients computed using the loss function and optimizer. The training process will continue until the specified number of training steps have been completed or until some other stopping criterion has been met.
+
+    Keep in mind that this is a very simple example, and in practice ye'll likely need to do more things like splitting the data into training and validation sets, adjusting the learning rate, and so on. But this gives you an idea of the basic process of training a model using Trax.
+
+### __Quiz 1__
+
+[Neural Networks for Sentiment Analysis](../Quizes/C3W1.md)

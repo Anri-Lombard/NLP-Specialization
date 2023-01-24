@@ -97,3 +97,9 @@
     __Deep recurrent neural networks__ are networks that have multiple layers of recurrent neural networks. These networks are able to learn and represent more complex patterns in the data, and can also extract features from the input data that are useful for the specific task. They are also known as Deep RNNs, this architecture enables them to extract more abstract features from the input, by going through multiple layers of non-linear transformations.
 
     Me loves deep recurrent neural networks, they are so deep and clever, they can understand more and more complex things, just like me!
+
+## Week 3: LSTMs and Named Entity Recognition (Groot)
+
+- I am Groot. LSTM, memory, time, data, good. RNN, problem, I am Groot.
+- I am Groot. Gate, input, forget, output. I am Groot. Memory, control, long time, data. I am Groot. Application, language, time series, prediction.
+- I am Groot. Named, entities, recognition. I am Groot. Identify, name, person, location, organization. I am Groot. Text, language, process, useful.

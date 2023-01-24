@@ -103,3 +103,22 @@
 - I am Groot. LSTM, memory, time, data, good. RNN, problem, I am Groot.
 - I am Groot. Gate, input, forget, output. I am Groot. Memory, control, long time, data. I am Groot. Application, language, time series, prediction.
 - I am Groot. Named, entities, recognition. I am Groot. Identify, name, person, location, organization. I am Groot. Text, language, process, useful.
+
+## Week 4: Siamese Networks (Hermione)
+
+- Let me explain __Siamese Networks__ in NLP. So, you know how in our Defense Against the Dark Arts class, we learned about creating identical copies of objects using a spell called "Duplication"? Siamese Networks in NLP are kind of like that, but with neural networks instead of objects.
+
+    A Siamese network is made up of two identical neural networks, with the same architecture and parameters. These twin networks are trained on different inputs, such as different sentences or paragraphs of text, but they are trained to perform the same task. For example, one twin network might be trained to classify text as positive or negative, while the other twin network is trained to classify text as fact or fiction.
+
+    When the Siamese network is used, it compares the output of the two twin networks to determine how similar the inputs were. This can be useful for tasks such as detecting plagiarism, where two pieces of text need to be compared to determine if one is a copy of the other. Or in language translation, where the network is trained on two different languages and it can check the similarity of the translation.
+
+    So, it's like having two identical copies of a spell, and then using them to compare and see how similar they are, in NLP tasks.
+- __One shot learning is a type of machine learning where a model is able to learn from one or very few examples__. This is in contrast to traditional machine learning where a model is trained on a large dataset.
+
+    Imagine, you are learning a new spell, you only have one chance to learn it and use it. That's One-shot learning.
+
+    One-shot learning is particularly useful in situations where there is a lack of data or where collecting more data is difficult or expensive. For example, in image recognition, one-shot learning can be used to recognize a person's face using only a single image of that person. Similarly, in natural language processing, one-shot learning can be used to identify the intent of a user's query using only one example of that query.
+
+    One-shot learning models typically rely on a similarity metric to compare new examples to the few examples that were used for training. The model's ability to generalize from a few examples is the key to its success.
+
+    In summary, one-shot learning is a method of machine learning that allows a model to learn from one or very few examples, this method is useful when data is scarce and expensive to obtain.

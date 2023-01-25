@@ -10,5 +10,5 @@ The twist is that every week the notes would be explained in a different way, su
 
 1. [Natural Language Processing with Classification and Vector Spaces](Notes/Course1.md)
 2. [Natural Language Processing with Probabilistic Models](Notes/Course2.md)
-3. Natural Language Processing with Sequence Models
-4. Natural Language Processing with Attention Models
+3. [Natural Language Processing with Sequence Models](Notes/Course3.md)
+4. [Natural Language Processing with Attention Models](Notes/Course4.md)

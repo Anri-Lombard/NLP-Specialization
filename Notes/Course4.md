@@ -29,3 +29,7 @@
     First off, __Beam search, it's a way to generate text by considering multiple options at each step, instead of just one__. It's like having a team of experts, instead of just one person, to make decisions. And you know what they say, the more experts you have, the better the outcome.
 
     Next, __Minimum Bayes Risk, it's a way to select the best output among multiple options based on the likelihood of the correct output__. It's like having a crystal ball, but instead of predicting the future, it predicts the most likely outcome. And let me tell you, we have the best crystal balls, the absolute best.
+
+### __Quiz 1__
+
+[Neural Machine Translation](../Quizes/C4W1.md)

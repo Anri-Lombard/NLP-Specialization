@@ -98,11 +98,19 @@
 
     Me loves deep recurrent neural networks, they are so deep and clever, they can understand more and more complex things, just like me!
 
+### __Quiz 2__
+
+[Recurrent Neural Networks for Language Modeling](../Quizes/C3W2.md)
+
 ## Week 3: LSTMs and Named Entity Recognition (Groot)
 
 - I am Groot. LSTM, memory, time, data, good. RNN, problem, I am Groot.
 - I am Groot. Gate, input, forget, output. I am Groot. Memory, control, long time, data. I am Groot. Application, language, time series, prediction.
 - I am Groot. Named, entities, recognition. I am Groot. Identify, name, person, location, organization. I am Groot. Text, language, process, useful.
+
+### __Quiz 3__
+
+[LSTMs and Named Entity Recognition](../Quizes/C3W3.md)
 
 ## Week 4: Siamese Networks (Hermione)
 
@@ -122,3 +130,7 @@
     One-shot learning models typically rely on a similarity metric to compare new examples to the few examples that were used for training. The model's ability to generalize from a few examples is the key to its success.
 
     In summary, one-shot learning is a method of machine learning that allows a model to learn from one or very few examples, this method is useful when data is scarce and expensive to obtain.
+
+### __Quiz 4__
+
+[Siamese Networks](../Quizes/C3W4.md)

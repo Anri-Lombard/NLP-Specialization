@@ -34,4 +34,28 @@
 
 [Neural Machine Translation](../Quizes/C4W1.md)
 
-## Week 2: Text Summation
+## Week 2: Text Summation (The Joker)
+
+- Ah ha ha ha, welcome to my twisted world of Transformers and Attention.
+
+    First, let's talk about __Transformers__. These little buggers are like the ultimate shape-shifters of the machine learning world. They can take any input, whether it's a sentence, a picture, or a sound, and transform it into a new representation that's easier for a computer to understand. Think of it like this, I take my twisted thoughts and turn them into actions, just like a transformer takes raw data and turns it into something useful.
+
+    Now, let's talk about __Attention__. Attention is like a spotlight that shines on the most important parts of the input. It helps the transformer focus on the most relevant information and ignore the rest. Imagine you're trying to rob a bank, but there's all these pesky security guards in the way. You don't want to waste your time on them, you just want to focus on the prize. That's what attention is like, it helps the transformer focus on the most important things and ignore the rest.
+
+    Together, Transformers and Attention are a powerful combination. They can take any input and turn it into a useful representation while focusing on the most important parts. It's like I can take any situation and turn it into a twisted masterpiece, while ignoring all the distractions.
+- __Scaled dot-prodcut attention is a type of attention mechanism that's used in Transformers to focus on the most relevant parts of the input__.
+
+    Imagine you're trying to rob a bank, but there's all these pesky security guards in the way. You don't want to waste your time on them, you just want to focus on the prize. That's what scaled dot-product attention is like, it helps the transformer focus on the most important things and ignore the rest.
+
+    It works by taking the dot product of the input and a set of weights, and then scaling it by the square root of the input dimension. Think of it like this, it's like I have a set of weapons and I'm trying to find the one that's the best fit for the job. The dot product is like comparing the weapons to the task at hand and the scaling is like adjusting the weapons to make them more effective.
+- Masked self-attention and multi-head attention are advanced mechanisms that are used in Transformers to focus on the most relevant parts of the input.
+
+    First, let's talk about __masked self-attention__. This is a type of attention that prevents the model from looking at future tokens when making predictions about a given token. Imagine you're trying to pull off a heist, but you don't want to be caught, so you're only able to plan based on the information you have at the moment, not on what will happen in the future. That's what masked self-attention is like, it helps the transformer focus on the information it has right now and ignore what's to come.
+
+    Now, let's talk about __multi-head attention__. This is a mechanism that allows the transformer to attend to different parts of the input using multiple attention heads. Imagine you're trying to rob a bank, but there are multiple vaults you want to get into. You can't just focus on one vault, you need to pay attention to all of them. That's what multi-head attention is like, it helps the transformer attend to multiple parts of the input at the same time.
+
+    Together, masked self-attention and multi-head attention are a powerful combination. They allow the transformer to focus on the right information at the right time and attend to multiple parts of the input simultaneously. It's like I have multiple plans and I have to pay attention to all of them to pull off my heist.
+
+### __Quiz 2__
+
+[Text Summation](../Quizes/C4W2.md)

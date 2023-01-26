@@ -33,3 +33,5 @@
 ### __Quiz 1__
 
 [Neural Machine Translation](../Quizes/C4W1.md)
+
+## Week 2: Text Summation

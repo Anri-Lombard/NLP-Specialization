@@ -59,3 +59,62 @@
 ### __Quiz 2__
 
 [Text Summation](../Quizes/C4W2.md)
+
+## Week 3: Question Answering (The Riddler)
+
+- Imagine you have a vast library of knowledge, containing all sorts of information about the world. But this library is not like any you've ever seen before - it's all stored in a digital format, and it's so big that you could spend a lifetime searching through it and never find what you're looking for.
+
+    Now, let's say you come to me with a question, like "What is the capital of France?" I, as the question-answering system, would use my powers of natural language processing to understand the question you're asking. I would then search through that vast library of knowledge and find the answer for you: "Paris".
+
+    But it's not just simple questions I can answer. I can also understand more complex questions, like "What are the most common causes of traffic congestion in major cities?" I would use my knowledge about traffic, cities, and common causes to find the answer for you.
+
+    So you see, __question-answering in NLP is like having a super-powered librarian at your fingertips__, able to find the information you need from a vast digital library, in a way that even The Riddler would be impressed by.
+- Imagine you've spent months trying to solve a riddle, and you've finally cracked the code. You've discovered the solution, and it took you a lot of time and effort to get there. But now that you know the answer, you can use that knowledge to solve similar riddles much faster in the future.
+
+    __This is exactly what transfer learning is like in the field of AI and NLP__. A model that has already been trained on a large dataset can be fine-tuned on a smaller dataset with a different but related task, leveraging the knowledge it has already gained to learn the new task more efficiently.
+
+    It's like using the code you cracked to open other locks that have similar mechanism. With the knowledge you've gained from solving one riddle, you can solve similar riddles much faster and with less effort.
+- ELMo, GPT, BERT and T5 are all advanced language models that use deep learning techniques to understand and generate natural language.
+
+    __ELMo__ is like a master code breaker, it uses the context of a word to understand its meaning, allowing it to crack the code of language and understand the meaning of words in their context.
+
+    __GPT__, on the other hand, is like a master thief, it can generate human-like text by stealing and mimicking the patterns it has observed in the training data.
+
+    __BERT__ is like a master detective, it can understand the underlying meaning and relationships between words in a sentence, allowing it to solve the mysteries of language.
+
+    And __T5__ is like a master illusionist, it can perform a wide range of natural language tasks using a single model by learning to adapt to the task at hand with its transformer architecture.
+- Let me explain how to use Hugging Face's pipelines to do question answering, in a way that even The Riddler would understand.
+
+    First, you'll need to install the Hugging Face's transformers library and the pipeline library. You can do this by running the following command:
+
+    ```python
+    !pip install transformers
+    !pip install pipeline
+    ```
+
+    Next, you'll need to import the necessary libraries and load a pre-trained question answering model from the transformers library.
+
+    ```python
+    from transformers import pipeline
+
+    question_answering_model = pipeline("question-answering")
+    ```
+
+    Now you're ready to use the model to answer questions. You can do this by passing in the model, a question, and the text that the question is about.
+
+    ```python
+    text = "In ancient Greece, the city of Athens was known for its powerful army and its famous philosophers, such as Socrates and Plato. The city was also home to the Parthenon, a temple dedicated to the goddess Athena."
+    question = "Who were some famous philosophers from ancient Athens?"
+
+    answers = question_answering_model(question=question, context=text)
+
+    print(answers[0]["answer"])
+    ```
+
+    The above code will output the answer to the question "Who were some famous philosophers from ancient Athens?" as "Socrates and Plato"
+
+    You can also use other pre-trained models like BERT, RoBERTa, DistilBERT, etc by specifying the model name in the pipeline function.
+
+    ```python
+    question_answering_model = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
+    ```

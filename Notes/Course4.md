@@ -118,3 +118,22 @@
     ```python
     question_answering_model = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
     ```
+
+### __Quiz 3__
+
+[Question Answering](../Quizes/C4W3.md)
+
+## Week 4: Chatbot (SpongeBob SquarePants)
+
+- So imagine you're living in Bikini Bottom and you have a whole bunch of different things you want to remember, like where you put your spatula or what Mr. Krabs' secret recipe is. But it's hard to keep track of all that stuff in your head, right? That's where __LSH attention__ comes in! It's like a super-duper memory helper that helps you find the things you're looking for faster.
+
+    It works by taking all the things you want to remember and putting them in little groups, kind of like how you put all your jellyfish nets in one pile and all your krabby patties in another pile. Then, when you're looking for something, you only have to search through the pile that has what you're looking for, instead of looking through all the piles. And that makes it a lot faster, just like how it's faster to find your spatula in the kitchen than it is to search all over Bikini Bottom for it. That's LSH attention!
+- __The Reformer__ is a kind of computer machine, just like the fry cook machine in the Krusty Krab. But instead of making delicious krabby patties, it helps with something called "computations", which is kind of like counting how many krabby patties you have, but way more complicated.
+
+    The Reformer is special because it can do these computations really fast and use less memory, kind of like how you can fry a lot of krabby patties at once and keep them all warm in the warming light. It does this using something called "attention" which is kind of like how you pay attention to the krabby patties so they don't burn.
+
+    So, imagine you have a big list of things you need to remember for a big test at boating school, like all the different types of anchors and how to tie different knots. The Reformer can help you study that list faster and use less memory, just like how you can remember all the different orders of krabby patties and still have room in your head to remember the secret recipe. That's the Reformer!
+
+### __Quiz 4__
+
+[Chatbot](../Quizes/C4W4.md)
